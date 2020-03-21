@@ -3,11 +3,12 @@ import classes from './AnswersList.css'
 import AnswerItem from './AnswerItem/AnswerItem'
 
 const AnswersList = props => {
-  // console.log('List ', props)
+  console.log('List ', props)
 
+  // TODO: answers
   return (
   <ul className={classes.AnswersList}>
-    {props.answers.map((answer, index) => {
+    {props.answer.map((answer, index) => {
       return (
         <AnswerItem
           key={index}
