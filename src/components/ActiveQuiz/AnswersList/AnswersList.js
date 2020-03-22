@@ -5,10 +5,9 @@ import AnswerItem from './AnswerItem/AnswerItem'
 const AnswersList = props => {
   console.log('List ', props)
 
-  // TODO: answers
   return (
   <ul className={classes.AnswersList}>
-    {props.answer.map((answer, index) => {
+    {props.answers.map((answer, index) => {
       return (
         <AnswerItem
           key={index}

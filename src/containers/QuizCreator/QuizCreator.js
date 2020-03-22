@@ -54,12 +54,11 @@ export default class QuizCreator extends Component {
       question: question.value,
       id: index,
       rightAnswerId: this.state.rightAnswerId,
-      // TODO: answers
-      answer: [
+      answers: [
         {text: option1.value, id: option1.id},
-        {text: option2.value, id: option1.id},
-        {text: option3.value, id: option1.id},
-        {text: option4.value, id: option1.id}
+        {text: option2.value, id: option2.id},
+        {text: option3.value, id: option3.id},
+        {text: option4.value, id: option4.id}
       ]
     }
 
