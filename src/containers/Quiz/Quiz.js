@@ -123,7 +123,12 @@ class Quiz extends Component {
     this.props.fetchQuizById(this.props.match.params.id)
   }
 
+  componentWillUnmount() {
+    this.props.retryQuiz()
+  }
+
   render() {
+    console.log(this.props.quiz);
     return (
       <div className={classes.Quiz}>
 

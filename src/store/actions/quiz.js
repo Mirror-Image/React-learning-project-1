@@ -93,7 +93,7 @@ export function finishQuiz() {
 export function quizNextQuestion(questionNumber) {
   return {
     type: QUIZ_NEXT_QUESTION,
-    questionNumber
+    number: questionNumber
   }
 }
 

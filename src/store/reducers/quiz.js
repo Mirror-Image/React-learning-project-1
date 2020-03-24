@@ -66,6 +66,7 @@ export default function quizReducer(state = initialState, action) {
         isFinished: false,
         results: {}
       }
+
     default:
       return state;
   }
